@@ -3,23 +3,22 @@ import { Metadata } from "next";
 export const socials = [
   {
     id: 1,
-    name: "Twitter",
-    url: "https://twitter.com/YenneferIlw",
-    handle: "@YenneferIlw",
+    name: "Facebook",
+    url: "https://www.facebook.com/alexandra.kolesnikova.908",
+    handle: "fb",
   },
   {
     id: 2,
     name: "Instagram",
-    url: "https://www.instagram.com/ilwyennefer",
-    handle: "ilwyennefer",
+    url: "https://www.instagram.com/alessandra",
+    handle: "insta",
   },
 ];
 
-const title = "ILW Yennefer";
+const title = "ConsoleCrafters";
 const description =
-  "Full-Stack Software Engineer 🧑🏻‍💻 working with cutting-edge stuff.";
-const image =
-  "https://yt3.ggpht.com/VoEBu0KxtQkfWretx-3_NqxKnoLqfKNTtWq0KFigdqaqVQFz8CggKgqkcxXqCDW7zYWlZZJOuQ=s108-c-k-c0x00ffffff-no-rj";
+  "Amazing stuff for your vintage console";
+const image =  "";
 
 export const metaData: Metadata = {
   title: title,
@@ -27,8 +26,8 @@ export const metaData: Metadata = {
   openGraph: {
     title,
     description,
-    url: "https://ilwyennefer.com",
-    siteName: "ILW Yennefer",
+    url: "",
+    siteName: "ConsoleCrafters",
     images: [{ url: image }],
     locale: "en-US",
     type: "website",
@@ -43,12 +42,5 @@ export const metaData: Metadata = {
       "max-image-preview": "large",
       "max-snippet": -1,
     },
-  },
-  twitter: {
-    title: title,
-    description: description,
-    card: "summary_large_image",
-    images: [image],
-    creator: "@YenneferIlw",
   },
 };

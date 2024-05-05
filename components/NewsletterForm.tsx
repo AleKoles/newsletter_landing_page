@@ -57,12 +57,18 @@ function NewsletterForm() {
   };
 
   return (
-    <div className="flex flex-col space-y-8 md:w-[400px]">
+    <div id="subscribe" className="flex flex-col space-y-8 md:w-[400px]">
+       <div className="space-y-1">
+        <h2 className="z-10 text-xl font-bold text-center text-transparent bg-white cursor-default sm:text-2xl md:text-3xl whitespace-nowrap bg-clip-text">
+          Join the waitlist for our 
+          <span className="bg-white whitespace-nowrap bg-clip-text bg-gradient-to-r from-teal-300 to-teal-600"> Product</span>
+        </h2>
+      </div>
       <form
         onSubmit={handleSubmit}
         className="newsletter-form mt-10 animate-fade-in-3"
       >
-        <div className="group flex items-center gap-x-4 py-1 pl-4 pr-1 rounded-[9px] bg-[#090D11] hover:bg-[#15141B] shadow-outline-gray hover:shadow-transparent focus-within:bg-[#15141B] focus-within:!shadow-outline-gray-focus transition-all duration-300">
+        <div className="group flex flex-col sm:flex-row items-center gap-4 py-1 pl-4 pr-1 rounded-[9px] bg-[#090D11] hover:bg-[#15141B] shadow-outline-gray hover:shadow-transparent focus-within:bg-[#15141B] focus-within:!shadow-outline-gray-focus transition-all duration-300">
           <EnvelopeIcon className="hidden sm:inline w-6 h-6 text-[#4B4C52] group-focus-within:text-white group-hover:text-white transition-colors duration-300" />
           <input
             value={input}

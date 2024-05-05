@@ -2,7 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
+
 @layer base {
+ 
   .text-stroke {
     -webkit-text-stroke: 1px rgba(255, 255, 255, 0.3);
   }
@@ -16,16 +22,16 @@
   }
 
   .newsletter-form {
-    --primary: #8c4ec2;
-    --primary-dark: #6b21a8;
-    --primary-darkest: #3b0764;
+    --primary: #14b8a6;
+    --primary-dark: #0d9488;
+    --primary-darkest: #0f766e;
     --input-placeholder: #a6accd;
     --input-text: #646b8c;
     --border-default: #e1e6f9;
-    --border-active: #8c4ec2;
+    --border-active: #14b8a6;
     --background: #fff;
     --button-text: #ffffff;
-    --success: #8c4ec2;
+    --success: #14b8a6;
     --trails: rgb(140, 78, 194, 0.15);
   }
 
